@@ -57,10 +57,21 @@ void draw() {
      obstacles[i].o = -75;
      obstacles[i].p = (int) random(50,400);
   }
+  
+  //obstacles (for now)
+  noStroke();
+  fill(255);
+  ellipse(obstacles[i].o, obstacles[i].p, 70,50);
+  ellipse(obstacles[i].o+20, obstacles[i].p+15, 70, 50);
+  ellipse(obstacles[i].o-20, obstacles[i].p+15, 70, 50);
+  
+  }
+  
+}
      
       
     
   
   
   
-}
+
