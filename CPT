@@ -49,7 +49,17 @@ void draw() {
   ellipse(x, y, 50, 50);     // use variable to draw
   
   //loop through the obstacles
-  for (int i = 0
+  for (int i = 0;   i < obstacles.length; i++) {
+    obstacles[i].add(1,0);
+    
+    //reset
+  if (obstacles[i].o - 75 > width) {
+     obstacles[i].o = -75;
+     obstacles[i].p = (int) random(50,400);
+  }
+     
+      
+    
   
   
   
