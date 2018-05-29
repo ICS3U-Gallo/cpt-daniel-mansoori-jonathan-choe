@@ -6,7 +6,7 @@ PVector[] obstacles;
 void setup() {
   size(800, 800);
 
-  obstacles = new PVector[10];
+  obstacles = new PVector[30];
   for (int i = 0; i < obstacles.length; i++) {
     float x = random(0, width);
     float y = random(0, 800);
@@ -21,7 +21,7 @@ void draw() {
   background(0);
   //loop through the obstacles
   for (int i = 0;   i < obstacles.length; i++) {
-    obstacles[i].add(1,0);
+    obstacles[i].add(-1,0);
     
     //reset
   if (obstacles[i].x - 95 > width) {
