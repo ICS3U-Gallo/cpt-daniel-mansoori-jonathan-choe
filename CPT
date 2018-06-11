@@ -19,7 +19,7 @@ void setup() {
     for (int i = 0;   i < obstacles.length; i++) {
       obstacles[i].add(-5,0);
       
-       if (obstacles[i].x + 30 > width) {
+       if (obstacles[i].x + 1350 > width) {
       obstacles[i].x = + width;
       obstacles[i].y = (int) random(1350, 800);
     }
