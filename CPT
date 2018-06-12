@@ -19,22 +19,29 @@ void setup() {
     for (int i = 0;   i < obstacles.length; i++) {
       obstacles[i].add(-5,0);
       
-       if (obstacles[i].x + 1350 > width) {
-      obstacles[i].x = + width;
-      obstacles[i].y = (int) random(1350, 800);
-    }
+      // if (obstacles[i].x - 1351 > width) {
+      //obstacles[i].x = + width;
+      //obstacles[i].y = (int) random(1350, 800);
+    //}
+    
+  //   if (obstacles[i].x, obstacles[i].y == rect (30,y)) {
+  //System.out.println("GAME OVER");
+//}
+
      
       
   
     //draw obstacles (for now)
     noStroke();
     fill(51,51,255);  
-     ellipse(obstacles[i].x, obstacles[i].y, 30,20);
+     ellipse(obstacles[i].x, obstacles[i].y, 30,30);
   }
-    rect (30,y,40,40);
+    ellipse (30,y,30,30);
     fill(255,0,127);
       
-     
+     if (d <= r1+r2  //the radius of the obstacle and the character are a certain number
+                     //distance apart, then print GAME OVER 
+                     //https://processing.org/reference/ellipseMode_.html
   }
   
   void keyPressed() {
@@ -47,6 +54,3 @@ void setup() {
     }
   }
 
-// if (obstacles[i].x, obstacles[i].y == rect (30,y)) {
- // System.out.println("GAME OVER");
-//}
