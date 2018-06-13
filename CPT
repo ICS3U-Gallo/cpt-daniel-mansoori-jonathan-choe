@@ -28,10 +28,10 @@ void setup() {
 
 
     
-    //   if (obstacles[i].x + 1351 > width) {
-      //obstacles[i].x = - 25;
-      //obstacles[i].y = (int) random(1350, 800);
-    //}
+       if (obstacles[i].x + 1350 < width) {
+      obstacles[i].x = - 25;
+      obstacles[i].y = (int) random(1350, width);
+    }
    // if (d <= r1+r2  //the radius of the obstacle and the character are a certain number
                      //distance apart, then print GAME OVER 
                      //https://processing.org/reference/ellipseMode_.html
